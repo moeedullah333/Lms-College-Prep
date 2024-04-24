@@ -1,0 +1,30 @@
+
+@media(max-width: 1024px){
+    .main_small_container{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media(max-width: 768px){
+    .analytics_section {
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 600px){
+    .sidebar_btn{
+        display: inline-block;
+    }
+
+    .crossbtn_for_navbar{
+        display: inline-block;
+    }
+
+    .sidebar_humburger_icon{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}

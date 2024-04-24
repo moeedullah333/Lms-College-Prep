@@ -1,0 +1,782 @@
+
+body{
+    display: flex;
+    margin-top: 16px;
+    /* font-family: "Jost", sans-serif; */
+    background-color: #f6f6f6;
+}
+
+.analytics_section{
+    width: 85%;
+}
+
+
+.sidebar_btn[aria-expanded="false"]:after{
+    content: '\f107';
+    color: #fff;
+    font-family: fontawesome;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.sidebar_btn[aria-expanded="true"]:after{
+    content: '\f106';
+    color: #fff;
+    font-family: fontawesome;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.sidebar_btn{
+    font-size: 22px;
+    display: none;
+    cursor: pointer;
+}
+
+.crossbtn_for_navbar{
+    background-color: #58585e;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.sidebar_main {
+    width: 260px;
+    /* height: 100vh; */
+    background: linear-gradient(315deg, #0861F5, #5194FF);
+    border-radius: 16px;
+    padding: 12px;
+    margin-left: 10px;
+}
+
+.sidebar_main .dashboard_logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.sidebar_main .card{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+}
+
+.sidebar_main .card-header{
+    border-radius: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.sidebar_main .sidebar_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    margin: 12px 0px;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+.superadmin_profile_picture img{
+    height: 40px;
+    width: 40px;
+}
+
+.superadmin_name{
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.card-body{
+    padding: 0px 5px 10px;
+    color: #fff;
+}
+
+.pages_under_tabs{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: #0263cb;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.pages_under_tabs:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.dashboard_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 10px;
+    margin: 12px 0px;
+    border-radius: 8px;
+    background-color: #58585E;
+}
+.dashboard_btn:hover{
+    background-color: #58585E;
+}
+
+.dashboard_icon_img img{
+    height: 20px;
+    width: 20px;
+}
+
+.dashboard_under_page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 10px;
+    margin: 12px 0px;
+    border-radius: 8px;
+    background-color: #F85718;
+    color: #fff;
+}
+
+.dashboard_under_page:hover{
+    color: #fff;
+}
+
+
+.all_pages_list{
+    margin: 0px;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.single_page_link .sidebar_btn{
+    border: none;
+    margin: 0px;
+    /* margin-bottom: 10px; */
+    text-decoration: none;
+}
+
+.single_page_link .superadmin_profile_picture img{
+    height: 25px;
+    width: 25px;
+}
+
+.dashboard_pages_heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.heading_with_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.top_bar_right_part{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.main_page_heading{
+    margin: 0px;
+    color: #344767;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main_search_bar input{
+    border: 1px solid #afafaf;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.top_bar_icons{
+    display: flex;
+    gap: 16px;
+}
+
+.header_user_icon{
+    display: flex;
+    background-color: #b3b3b3;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.header_alert_icon{
+    display: flex;
+    color: #b3b3b3;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.number_of_notifications{
+    position: absolute;
+    top: -4px;
+    font-size: 10px;
+    padding: 1px 8px;
+    border-radius: 10px;
+    left: 12px;
+    background-color: #E91F63;
+    color: #fff;
+}
+
+.main_small_container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: #fff;
+}
+
+.vector_with_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_top_bar{
+    margin-bottom: 30px;
+}
+
+.container_vector{
+    /* background: #000; */
+    background: linear-gradient(180deg, #3E3E45, #202020);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -28px;
+}
+
+.container_vector02{
+     background: #F85718;
+     /* background: linear-gradient(180deg, #3E3E45, #202020); */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 70px;
+     width: 70px;
+     border-radius: 10px;
+     position: relative;
+     margin-top: -28px;
+}
+
+.container_vector03{
+    background: #00694A;
+    /* background: linear-gradient(180deg, #3E3E45, #202020); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -28px;
+}
+
+.container_vector04{
+    /* background: #00694A; */
+    background: linear-gradient(315deg, #0861F5, #5194FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -28px;
+}
+
+.container_vector img{
+    height: 25px;
+    width: 25px;
+}
+
+.small_container_title{
+    color: #7B809A;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.title_info{
+    text-align: right;
+    font-size: 28px;
+    font-weight: 700;
+    color: #344767;
+    margin: 0px;
+}
+
+.percentage_number{
+    display: inline-block;
+    color: #01c03c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.new_updates_info{
+    border-top: 1px solid #dedede;
+    margin-top: 10px;
+    padding-top: 14px;
+}
+
+.single_admin{
+    background: linear-gradient(315deg, #0861F5, #5194FF);
+    border-radius: 14px;
+    padding: 20px;
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+.admin_details{
+    display: flex;
+    align-items: baseline;
+    color: #fff;
+    gap: 18px;
+}
+
+.admin_number{
+    margin: 0px;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.admin_personal_info_main{
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+}
+
+.admin_personal_info{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.students_details_main{
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.student_enrolled_title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.enrolled_student_details{
+    display: flex;
+    gap: 32px;
+    align-items: baseline;
+}
+
+.enrolled_student_profile_pic{
+    text-align: center;
+}
+
+.enrolled_student_profile_pic img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.enrolled_student_name{
+    display: inline-block;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.more_enrolled_students{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.view_all_students {
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+}
+
+.view_all_students:hover{
+    color: #dedede;
+}
+
+.enrolled_student_batch_details{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.enrolled_student_batch_number{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.single_batch_details{
+    display: flex;
+    gap: 30px;
+}
+
+.single_batch_heading{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    /* margin-bottom: 8px; */
+    display: inline-block;
+}
+
+.total_number_of_students_enolled{
+    color: #F85718;
+    /* display: inline-block; */
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.batch_date{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.view_all_batches_action_btn{
+    display: inline-block;
+    background-color: #F85718;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding: 6px 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.view_all_batches_action_btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.all_admins_container{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.add_admin{
+    background: linear-gradient(315deg, #0861F5, #5194FF);
+    border-radius: 14px;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.add_admin_heading{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.create_new-admin_para{
+    color: #ADB9D8;
+}
+
+.create_admin_btn_main{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.create_new_admin_actionBtn{
+    background-color: #F85718;
+    border: none;
+    color: #12437A;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 2px 55px, rgba(0, 0, 0, 0.12) 14px 2px 30px, rgba(0, 0, 0, 0.12) 4px 6px 6px, rgba(0, 0, 0, 0.17) 5px 2px 13px, rgba(0, 0, 0, 0.09) 4px 4px 5px;
+}
+
+.create_admin_btn_label{
+    display: inline-block;
+    color: #F85718;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+.course_img_with_details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 0px;
+}
+
+.top_selling_product_img img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.course_img_with_details .best_selling_course_name{
+    margin: 0px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    color: #344767;
+    margin-bottom: 2px;
+}
+
+.no_of_enrollments{
+    color: #00ca1e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.no_of_enrolled{
+    padding-left: 6px;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #818181;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.top_selling_courses_table table th{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #7B809A;
+    font-weight: 600;
+    border-top: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.top_selling_courses_table table td{
+    border-top: none;
+    border-bottom: 1px solid #f3f3f3;
+    vertical-align: middle;
+    color: #7B809A;
+}
+
+.top_selling_courses_table{
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top_selling_courses_table .top_selling_courses_title{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    color: #535353;
+}
+
+.last_refund::after{
+    content: '\f106';
+    font-family: fontawesome;
+    color: #f00;
+    padding-left: 6px;
+    font-size: 14px;
+}
+
+.even_refund::after{
+    content: '\f107';
+    font-family: fontawesome;
+    color: rgb(3, 236, 65);
+    padding-left: 6px;
+    font-size: 14px;
+}
+
+/* .all_admins_container{
+    -ms-overflow-style: none;
+  scrollbar-width: none; 
+} */
+
+/* STUDENT RECORD PAGE CSS START */
+
+
+.student_table_main .table_action_btns_main{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+}
+
+
+.student_table_main .table_action_btns_main .table_action_btn{
+    border: none;
+    background-color: #1382f7;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+
+.student_table_main .table_action_btns_main .table_action_btn:focus{
+    outline: none;
+}
+
+
+.student_table_main .table_action_btns_main .table_action_btn:nth-child(2){
+    background-color: #fc2e2e;
+}
+
+
+.student_table_main table thead th{
+    background-color: #58585e;
+    border: none;
+    color: #fff;
+}
+
+
+
+.student_table_main table thead th:first-child{
+   border-top-left-radius: 14px;
+}
+
+
+.student_table_main table thead th:last-child{
+    border-top-right-radius: 14px;
+ }
+
+
+.student_table_main{
+    padding-top: 24px;
+}
+
+
+.student_table_main table tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 14px;
+}
+
+
+.student_table_main table tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 14px;
+}
+
+
+.student_form_main form label{
+    font-weight: 600;
+}
+
+
+.student_form_main form input{
+    height: 45px;
+}
+
+
+.student_form_main{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* STUDENT RECORD PAGE CSS END */
+
+button.pages_under_tabs {
+    background-color: crimson;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+span.short-desc-text{
+    padding-right: 8px;
+    height: 100px;
+    display: block;
+    overflow-y: scroll;
+    text-align: justify;
+    font-size: 16px;
+}
+
+span.short-desc-text::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+span.short-desc-text::-webkit-scrollbar-track {
+  background: hsl(240deg 7% 62% / 20%); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.student_table_main .table thead th:nth-child(3) {
+    width: 20%;
+}
+
+.student_table_main .table tbody tr td:nth-child(4) img {
+    width: 150px;
+    height: 150px;
+}
+
+.student_table_main .table tbody tr td:nth-child(3) img {
+    height: 150px;
+    width: 180px;
+}
+
+
